@@ -11,6 +11,8 @@
 #include "PWM_TraccionDelantera.h"
 #include "TraccionTrasera_Direccion.h"
 #include "TraccionDelantera_Direccion.h"
+#include "TraccionTrasera_DireccionB.h"
+#include "TraccionDelantera_DireccionB.h"
 
 //#include "PWM1.h"
 
@@ -80,6 +82,7 @@ Motor * Motor_getMotor(TIPO_MOTOR tipoMotor){
 	}
 }
 
+//TODO direccionB
 void Motor_Init(){
 	//Se inicializa Motor Trasero
 	motorTrasero.PWMdeviceData = PWM_TraccionTrasera_Init(NULL);

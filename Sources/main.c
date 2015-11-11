@@ -53,6 +53,8 @@
 #include "BitIoLdd16.h"
 #include "BOK.h"
 #include "BitIoLdd17.h"
+#include "TraccionDelantera_DireccionB.h"
+#include "TraccionTrasera_DireccionB.h"
 #include "Led.h"
 #include "CS1.h"
 #include "FRTOS1.h"
