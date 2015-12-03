@@ -19,6 +19,8 @@ struct Motor_{
 	LDD_TError (*SetRatio16)(LDD_TDeviceData*, uint16_t); /* Funcion para setear el ratio */
 	LDD_TDeviceData *DIRdeviceData; /* LDD device para controlar la Direccion */
 	void (*DirPutVal)(LDD_TDeviceData *, bool); /* Funcion para setear la Direccion */
+	LDD_TDeviceData *DIRdeviceDataB; /* LDD device para controlar la DireccionB */
+    void (*DirPutValB)(LDD_TDeviceData *, bool); /* Funcion para setear la DireccionB */
 };
 
 

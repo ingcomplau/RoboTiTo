@@ -89,11 +89,15 @@ void Motor_Init(){
 	motorTrasero.SetRatio16 = PWM_TraccionTrasera_SetRatio16;
 	motorTrasero.DIRdeviceData = TraccionTrasera_Direccion_Init(NULL);
 	motorTrasero.DirPutVal = TraccionTrasera_Direccion_PutVal;
+	motorTrasero.DIRdeviceDataB = TraccionTrasera_DireccionB_Init(NULL);
+	motorTrasero.DirPutValB = TraccionTrasera_DireccionB_PutVal;
 	//Se inicializa Motor Delantero
 	motorDelantero.PWMdeviceData = PWM_TraccionDelantera_Init(NULL);
 	motorDelantero.SetRatio16 = PWM_TraccionDelantera_SetRatio16;
 	motorDelantero.DIRdeviceData = TraccionDelantera_Direccion_Init(NULL);
 	motorDelantero.DirPutVal = TraccionDelantera_Direccion_PutVal;
+	motorDelantero.DIRdeviceDataB = TraccionDelantera_DireccionB_Init(NULL);
+	motorDelantero.DirPutValB = TraccionDelantera_DireccionB_PutVal;
     //Se activan los PWM
 	PWM_TraccionDelantera_Enable(motorDelantero.PWMdeviceData);
 	PWM_TraccionTrasera_Enable(motorTrasero.PWMdeviceData);

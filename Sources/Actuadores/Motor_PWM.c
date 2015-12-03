@@ -18,7 +18,14 @@ void Motor_PWM_Arrancar(Motor *m,uint8_t cantVelocidad,uint8_t dir){
 		 */
 	ratio = ((100-cantVelocidad)*65535)/100;
 	m->SetRatio16(m->PWMdeviceData,ratio);
-	m->DirPutVal(m->DIRdeviceData,dir); //Adelante dir = 1, Atras dir = 0
+	//Adelante dir = 1, Atras dir = 0
+	if(dir==1){
+		m->DirPutVal(m->DIRdeviceData,1);
+		m->DirPutValB(m->DIRdeviceDataB,0); 
+	}else{
+		m->DirPutVal(m->DIRdeviceData,0);
+		m->DirPutValB(m->DIRdeviceDataB,1); 
+	}
 }
 
 void MOTOR_PWM_setVelocidad(Motor *m,uint8_t cantVelocidad){
@@ -33,6 +40,13 @@ void MOTOR_PWM_setVelocidad(Motor *m,uint8_t cantVelocidad){
 }
 
 void MOTOR_PWM_setDireccion(Motor *m,uint8_t direccion){
-	m->DirPutVal(m->DIRdeviceData,direccion); //Adelante dir = 1, Atras dir = 0
+	//Adelante dir = 1, Atras dir = 0
+	if(direccion==1){
+		m->DirPutVal(m->DIRdeviceData,1);
+		m->DirPutValB(m->DIRdeviceDataB,0); 
+	}else{
+		m->DirPutVal(m->DIRdeviceData,0);
+		m->DirPutValB(m->DIRdeviceDataB,1); 
+	}
 }
 

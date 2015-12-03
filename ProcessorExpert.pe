@@ -3,8 +3,8 @@
   <Header>
     <Name>RoboTiTo</Name>
     <SavedBy>Lau</SavedBy>
-    <ModificationStamp>35</ModificationStamp>
-    <Date>2015-11-11</Date>
+    <ModificationStamp>36</ModificationStamp>
+    <Date>2015-12-02</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.9.0.RT6_b1411-0406</PEversion>
   </Header>
@@ -11935,7 +11935,7 @@
         <ItemSymbol>_Pin</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>PTE3/SPI1_MISO/SPI1_MOSI</Value>
+        <Value>PTE2/SPI1_SCK</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
@@ -61746,7 +61746,7 @@
         <ItemSymbol>_Pin</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>PTE2/SPI1_SCK</Value>
+        <Value>PTE3/SPI1_MISO/SPI1_MOSI</Value>
         <SharedPrphMode>false</SharedPrphMode>
       </ItemState>
       <ItemState>
